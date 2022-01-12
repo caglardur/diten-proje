@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import CalendarMain from "./components/calendarMain"
+import LeftMenu from "./components/leftMenu"
+import TitleBar from "./components/titleBar"
+import ToolBar from "./components/toolBar"
+import TopMenu from "./components/topMenu"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="row m-0 m-0">
+      <div className="col-auto" style={{ backgroundColor: "#2B333A" }}>
+        <LeftMenu />
+      </div>
+      <div className="col m-0 p-0">
+        <div className="col bg-white p-3 shadow-sm">
+          <TopMenu />
+        </div>
+        <div className="col p-3">
+          <TitleBar />
+        </div>
+        <div className="col bg-white m-3 p-3">
+          <div className="col">
+            <ToolBar />
+          </div>
+          <div className="col mt-3">
+            <CalendarMain />
+          </div>
+        </div>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
