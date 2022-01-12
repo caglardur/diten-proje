@@ -6,7 +6,7 @@ const MonthFrame = ({ month }) => {
   for (let i = 0; i < 24; i++) {
     complateCells.push(
       <div className="col-3 px-0" key={i}>
-        <SingleCell cellNumber={i + 1} />
+        <SingleCell cellNumber={i + 1} colourful={month.colourful} />
       </div>
     )
   }

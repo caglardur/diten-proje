@@ -5,9 +5,9 @@ export const FilterReduce = createSlice({
   initialState: {
     product: [],
     indication: [],
-    profile: [],
-    promoSubject: [],
-    promoMaterial: []
+    profile: null,
+    promoSubject: null,
+    promoMaterial: null
   },
   reducers: {
     setProduct: (state, action) => {

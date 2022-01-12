@@ -10,7 +10,7 @@ const SelectFilter = ({ title, type, items, selected }) => {
   }
 
   return (
-    <div className="col">
+    <div className="col-sm-12 col-md-6 col-lg-4 col-xl">
       <div className="col">
         <label htmlFor="inputProduct" className="form-label">
           {title}

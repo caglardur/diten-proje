@@ -36,7 +36,7 @@ const FilterMenu = () => {
           </div>
           <div className="col-auto">
             <button type="button" className="btn btn-outline-danger">
-              <i className="fas fa-rocket"></i>
+              <i className="fas fa-broom"></i>
             </button>
           </div>
         </div>

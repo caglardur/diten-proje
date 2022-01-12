@@ -4,8 +4,8 @@ const ToolBar = () => {
   return (
     <div className="col">
       <div className="col">
-        <div className="row align-items-center justify-content-between">
-          <div className="col-auto">
+        <div className="row align-items-center">
+          <div className="col-md-12 col-lg-4 mb-3">
             <div className="input-group">
               <input className="form-control border-end-0 border" type="text" defaultValue="search" id="example-search-input" />
               <span className="input-group-append">
@@ -15,8 +15,8 @@ const ToolBar = () => {
               </span>
             </div>
           </div>
-          <div className="col-auto">
-            <div className="row">
+          <div className="col-md-12 col-lg-8 mb-3">
+            <div className="row justify-content-end">
               <div className="col-auto ps-0">
                 <button type="button" className="btn btn-outline-warning">
                   send to approval

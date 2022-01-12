@@ -5,7 +5,7 @@ const TopMenu = () => {
         <i className="fas fa-indent"></i>
       </div>
       <div className="col">
-        <div className="row float-end">
+        <div className="row float-end align-items-center">
           <div type="button" className="col-auto me-3">
             <img src={require("../img/usaflag.png")} alt="usaflag" style={{ width: "20px" }} />
           </div>
