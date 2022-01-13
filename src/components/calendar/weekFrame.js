@@ -18,7 +18,7 @@ const WeekFrame = ({ quarter, weekNumber, colourful }) => {
 
   return (
     <DragDropContext>
-      <Droppable droppableId="characters">
+      <Droppable droppableId="characters" direction="horizontal">
         {provided => (
           <div className="row characters" {...provided.droppableProps} ref={provided.innerRef}>
             {weekCells}
