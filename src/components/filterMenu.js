@@ -1,4 +1,6 @@
 import { useSelector, useDispatch } from "react-redux"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBroom } from "@fortawesome/free-solid-svg-icons"
 
 import SelectFilter from "./filter/selectFilter"
 import { crealFilter } from "../redux/filterReducer"
@@ -38,7 +40,7 @@ const FilterMenu = () => {
           </div>
           <div className="col-auto">
             <button type="button" className="btn btn-outline-danger" onClick={() => dispatch(crealFilter())}>
-              <i className="fas fa-broom"></i>
+              <FontAwesomeIcon icon={faBroom} />
             </button>
           </div>
         </div>

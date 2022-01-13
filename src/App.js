@@ -6,7 +6,7 @@ import ToolBar from "./components/toolBar"
 import TopMenu from "./components/topMenu"
 
 function App() {
-  const [showLeftMenu, setShowLeftMenu] = useState(true)
+  const [showLeftMenu, setShowLeftMenu] = useState(window.innerWidth > 800 ? true : false)
 
   return (
     <div className="row m-0 m-0">

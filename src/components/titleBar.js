@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faUndoAlt, faBullhorn } from "@fortawesome/free-solid-svg-icons"
+
 const TitleBar = () => {
   return (
     <div className="row align-items-center justify-content-between">
@@ -10,16 +13,16 @@ const TitleBar = () => {
           <div className="col-auto">
             <button type="button" className="btn btn-outline-secondary">
               <div className="row">
-                <div className="col-auto me-0 pe-0">
-                  <i className="fas fa-undo-alt"></i>
+                <div className="col-auto">
+                  <FontAwesomeIcon icon={faUndoAlt} />
                 </div>
-                <div className="col-auto">back to page</div>
+                <div className="col-auto d-none d-md-block ps-0">back to page</div>
               </div>
             </button>
           </div>
           <div className="col-auto">
             <button type="button" className="btn btn-outline-secondary">
-              <i className="fas fa-bullhorn"></i>
+              <FontAwesomeIcon icon={faBullhorn} />
             </button>
           </div>
         </div>

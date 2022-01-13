@@ -11,7 +11,7 @@ const PinFilter = ({ quarter }) => {
   }
   return (
     <div className="col p-0 m-0">
-      <div className="col" style={{ height: "22px", marginBottom: "5px" }}></div>
+      <div className="col" style={{ height: "22px", marginBottom: "10px" }}></div>
       {pinCells}
     </div>
   )

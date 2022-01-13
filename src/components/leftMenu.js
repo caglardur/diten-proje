@@ -1,48 +1,51 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faAtom, faThLarge, faCalendarAlt, faEnvelope, faUsers, faCompress, faUnderline, faArchive, faTable, faClipboardCheck, faChartBar, faBarcode, faShareAlt, faAward } from "@fortawesome/free-solid-svg-icons"
+
 const LeftMenu = () => {
   return (
     <div className="col text-center" style={{ width: "40px" }}>
       <div type="button" className="col fs-3 mt-3" style={{ width: "40px" }}>
-        <i className="fab fa-react"></i>
+        <FontAwesomeIcon icon={faAtom} />
       </div>
       <div className="col fs-6 align-items-center mt-4">
         <div type="button" className="col icon my-4">
-          <i className="fas fa-th-large"></i>
+          <FontAwesomeIcon icon={faThLarge} />
         </div>
         <div type="button" className="col my-4">
-          <i className="far fa-calendar-alt"></i>
+          <FontAwesomeIcon icon={faCalendarAlt} />
         </div>
         <div type="button" className="col my-4">
-          <i className="fas fa-envelope"></i>
+          <FontAwesomeIcon icon={faEnvelope} />
         </div>
         <div type="button" className="col my-4">
-          <i className="fas fa-users"></i>
+          <FontAwesomeIcon icon={faUsers} />
         </div>
         <div type="button" className="col my-4">
-          <i className="fas fa-compress"></i>
+          <FontAwesomeIcon icon={faCompress} />
         </div>
         <div type="button" className="col my-4">
-          <i className="fas fa-underline"></i>
+          <FontAwesomeIcon icon={faUnderline} />
         </div>
         <div type="button" className="col my-4">
-          <i className="fas fa-archive"></i>
+          <FontAwesomeIcon icon={faArchive} />
         </div>
         <div type="button" className="col my-4">
-          <i className="fab fa-yarn"></i>
+          <FontAwesomeIcon icon={faAward} />
         </div>
         <div type="button" className="col left-icon my-4">
-          <i className="fas fa-table"></i>
+          <FontAwesomeIcon icon={faTable} />
         </div>
         <div type="button" className="col left-icon my-4">
-          <i className="fas fa-clipboard-check"></i>
+          <FontAwesomeIcon icon={faClipboardCheck} />
         </div>
         <div type="button" className="col left-icon my-4">
-          <i className="fas fa-chart-bar"></i>
+          <FontAwesomeIcon icon={faChartBar} />
         </div>
         <div type="button" className="col left-icon my-4">
-          <i className="fas fa-barcode"></i>
+          <FontAwesomeIcon icon={faBarcode} />
         </div>
         <div type="button" className="col left-icon my-4">
-          <i className="fas fa-share-alt"></i>
+          <FontAwesomeIcon icon={faShareAlt} />
         </div>
       </div>
     </div>
