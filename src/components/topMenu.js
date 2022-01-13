@@ -1,8 +1,8 @@
-const TopMenu = () => {
+const TopMenu = ({ showLeftMenu, setShowLeftMenu }) => {
   return (
     <div className="row text-secondary fs-6 align-items-center" style={{ height: "40px" }}>
-      <div type="button" className="col-auto">
-        <i className="fas fa-indent"></i>
+      <div type="button" className="col-auto" onClick={() => setShowLeftMenu(!showLeftMenu)}>
+        <i className={showLeftMenu ? "fas fa-outdent" : "fas fa-indent"}></i>
       </div>
       <div className="col">
         <div className="row float-end align-items-center">

@@ -24,10 +24,17 @@ export const FilterReduce = createSlice({
     },
     setPromoMaterial: (state, action) => {
       state.promoMaterial = action.payload
+    },
+    crealFilter: state => {
+      state.product = []
+      state.indication = []
+      state.profile = null
+      state.promoSubject = null
+      state.promoMaterial = null
     }
   }
 })
 
-export const { setProduct, setIndication, setProfile, setPromoSubject, setPromoMaterial } = FilterReduce.actions
+export const { setProduct, setIndication, setProfile, setPromoSubject, setPromoMaterial, crealFilter } = FilterReduce.actions
 
 export default FilterReduce.reducer

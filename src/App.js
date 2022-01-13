@@ -1,3 +1,4 @@
+import React, { useState } from "react"
 import CalendarMain from "./components/calendarMain"
 import LeftMenu from "./components/leftMenu"
 import TitleBar from "./components/titleBar"
@@ -5,14 +6,16 @@ import ToolBar from "./components/toolBar"
 import TopMenu from "./components/topMenu"
 
 function App() {
+  const [showLeftMenu, setShowLeftMenu] = useState(true)
+
   return (
     <div className="row m-0 m-0">
-      <div className="col-auto" style={{ backgroundColor: "#2B333A" }}>
+      <div className={showLeftMenu ? "col-auto" : "d-none"} style={{ backgroundColor: "#2B333A" }}>
         <LeftMenu />
       </div>
       <div className="col m-0 p-0">
         <div className="col bg-white p-3 shadow-sm">
-          <TopMenu />
+          <TopMenu showLeftMenu={showLeftMenu} setShowLeftMenu={setShowLeftMenu} />
         </div>
         <div className="col p-3">
           <TitleBar />

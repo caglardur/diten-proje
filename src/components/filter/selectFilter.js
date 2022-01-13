@@ -5,8 +5,9 @@ import { setFilterAction } from "../../redux/actions/filterAction"
 const SelectFilter = ({ title, type, items, selected }) => {
   const dispatch = useDispatch()
   let selectedWithSpace = selected
+  let titleEdit = title
   if (title.includes("_")) {
-    title = title.split("_").join(" ")
+    titleEdit = title.split("_").join(" ")
   }
   if (type === "checkbox") {
     selectedWithSpace = selected.join(", ")
@@ -16,7 +17,7 @@ const SelectFilter = ({ title, type, items, selected }) => {
     <div className="col-sm-12 col-md-6 col-lg-4 col-xl">
       <div className="col">
         <label htmlFor="inputProduct" className="form-label">
-          {title}
+          {titleEdit}
         </label>
       </div>
       <div className="col d-grid">

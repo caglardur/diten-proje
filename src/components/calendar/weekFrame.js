@@ -8,7 +8,7 @@ const WeekFrame = ({ quarter, weekNumber, colourful }) => {
     weekCells.push(
       <Draggable key={i} draggableId={quarter + i} index={i}>
         {provided => (
-          <div className="col-3" style={{ paddingLeft: "2px", paddingRight: "2px", paddingBottom: "2px", paddingTop: "1px" }} ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
+          <div className="col-3" style={{ paddingLeft: "1px", paddingRight: "1px", paddingBottom: "2px", paddingTop: "1px" }} ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>
             <SingleCell quarter={quarter} cellNumber={(weekNumber - 1) * 4 + i} colourful={colourful} />
           </div>
         )}
