@@ -1,5 +1,15 @@
-const SingleCell = ({ cellNumber, colourful }) => {
-  return <div className={"col opacity-50"} style={{ height: "20px", marginLeft: "3px", marginRight: "3px", marginTop: "1px", marginBottom: "1px", backgroundColor: colourful ? (cellNumber > 12 ? "#FEDDCB" : "#7FCFED") : "#EFF2F7" }}></div>
+import { useSelector } from "react-redux"
+
+const SingleCell = ({ quarter, cellNumber, colourful }) => {
+  const selectedPin = useSelector(state => state.pinned[quarter])
+
+  if (selectedPin) {
+    if (Math.ceil(cellNumber / 4) === selectedPin) {
+      colourful = false
+    }
+  }
+
+  return <div className="opacity-50" style={{ height: "20px", backgroundColor: colourful ? (cellNumber > 12 ? "#FEDDCB" : "#7FCFED") : "#EFF2F7" }}></div>
 }
 
 export default SingleCell

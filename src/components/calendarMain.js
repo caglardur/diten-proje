@@ -1,4 +1,5 @@
 import MonthFrame from "./calendar/monthFrame"
+import PinFilter from "./calendar/pinFilter"
 
 const CalendarMain = () => {
   const monthArray = [
@@ -19,12 +20,79 @@ const CalendarMain = () => {
   return (
     <div className="col" style={{ fontSize: "12px" }}>
       <div className="col">
-        <div className="row mx-1">
-          {monthArray.map((month, i) => (
-            <div className="col-4 px-0" key={i}>
-              <MonthFrame month={month} />
+        <div className="row">
+          <div className="col">
+            <div className="row mx-1">
+              {monthArray.map(
+                (month, i) =>
+                  month.quarter === 1 && (
+                    <div className="col-4 px-0" key={i}>
+                      <MonthFrame quarter="q1" month={month} />
+                    </div>
+                  )
+              )}
             </div>
-          ))}
+          </div>
+          <div className="col-auto ps-0">
+            <PinFilter quarter="q1" />
+          </div>
+        </div>
+      </div>
+      <div className="col">
+        <div className="row">
+          <div className="col">
+            <div className="row mx-1">
+              {monthArray.map(
+                (month, i) =>
+                  month.quarter === 2 && (
+                    <div className="col-4 px-0" key={i}>
+                      <MonthFrame quarter="q2" month={month} />
+                    </div>
+                  )
+              )}
+            </div>
+          </div>
+          <div className="col-auto ps-0">
+            <PinFilter quarter="q2" />
+          </div>
+        </div>
+      </div>
+      <div className="col">
+        <div className="row">
+          <div className="col">
+            <div className="row mx-1">
+              {monthArray.map(
+                (month, i) =>
+                  month.quarter === 3 && (
+                    <div className="col-4 px-0" key={i}>
+                      <MonthFrame quarter="q3" month={month} />
+                    </div>
+                  )
+              )}
+            </div>
+          </div>
+          <div className="col-auto ps-0">
+            <PinFilter quarter="q3" />
+          </div>
+        </div>
+      </div>
+      <div className="col">
+        <div className="row">
+          <div className="col">
+            <div className="row mx-1">
+              {monthArray.map(
+                (month, i) =>
+                  month.quarter === 4 && (
+                    <div className="col-4 px-0" key={i}>
+                      <MonthFrame quarter="q4" month={month} />
+                    </div>
+                  )
+              )}
+            </div>
+          </div>
+          <div className="col-auto ps-0">
+            <PinFilter quarter="q4" />
+          </div>
         </div>
       </div>
     </div>

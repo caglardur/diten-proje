@@ -5,6 +5,9 @@ import { setFilterAction } from "../../redux/actions/filterAction"
 const SelectFilter = ({ title, type, items, selected }) => {
   const dispatch = useDispatch()
   let selectedWithSpace = selected
+  if (title.includes("_")) {
+    title = title.split("_").join(" ")
+  }
   if (type === "checkbox") {
     selectedWithSpace = selected.join(", ")
   }

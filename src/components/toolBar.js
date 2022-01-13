@@ -6,13 +6,11 @@ const ToolBar = () => {
       <div className="col">
         <div className="row align-items-center">
           <div className="col-md-12 col-lg-4 mb-3">
-            <div className="input-group">
-              <input className="form-control border-end-0 border" type="text" defaultValue="search" id="example-search-input" />
-              <span className="input-group-append">
-                <button className="btn btn-outline-secondary bg-white border-start-0 border ms-n3" type="button">
-                  <i className="fa fa-search" />
-                </button>
-              </span>
+            <div className="form-group position-relative">
+              <input type="text" className="form-control" placeholder="search" />
+              <div className="position-absolute top-50 translate-middle-y" style={{ right: "15px" }}>
+                <i className="fas fa-search"></i>
+              </div>
             </div>
           </div>
           <div className="col-md-12 col-lg-8 mb-3">
