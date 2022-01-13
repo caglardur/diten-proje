@@ -9,7 +9,7 @@ const SingleCell = ({ quarter, cellNumber, colourful }) => {
     }
   }
 
-  return <div className="opacity-50" style={{ height: "20px", backgroundColor: colourful ? (cellNumber > 12 ? "#FEDDCB" : "#7FCFED") : "#EFF2F7" }}></div>
+  return <div className="col" style={{ height: "20px", backgroundColor: colourful ? (cellNumber > 12 ? "#FEDDCB" : "#7FCFED") : "#EFF2F7" }}></div>
 }
 
 export default SingleCell
